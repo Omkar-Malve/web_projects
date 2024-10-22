@@ -1,0 +1,41 @@
+<!-- 5 boxes and hover effect  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>box and Hover</title>
+   <style>
+
+       #main {
+           border: 2px solid black;
+           width: fit-content;
+           display: flex;
+           margin: 50px 100px;
+        }
+
+       #main > div {
+           width: 100px;
+           height: 100px;
+           background-color: chocolate;
+           margin: 10px;
+       }
+
+       #main > div:nth-child(3):hover {
+           width: 200px;
+           height: 200px;
+           background-color: teal;
+       }
+
+   </style>
+</head>
+<body>
+   <div id="main">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+   </div>
+</body>
+</html>
