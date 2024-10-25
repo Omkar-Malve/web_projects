@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+body {
+    background-color: skyblue;
+}
+.main {
+    border: 2px solid;
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 55px);
+    gap: 18px;
+
+    padding: 30px;
+    background-color: black;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.main > div {
+    background-color: rgb(53, 50, 60);
+    color: white;
+    font-size: large;
+    font-weight:700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 5px 2px 5px 1px black;
+}
+.main-1 {
+    grid-column: 11 /span 2;
+}
+.main-2 {
+    grid-column: 11/ span 2;
+}
+.main-3 {
+    grid-column: 5 / span 4;
+}
+
+.main > div:hover {
+    background-color: black;
+    columns: white;
+}
+.main > div:active {
+    background-color: goldenrod;
+    color: darkmagenta;
+}
+.main:hover{
+    background-color: rgb(177, 106, 55);
+}
